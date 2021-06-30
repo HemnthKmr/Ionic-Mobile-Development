@@ -1,0 +1,18 @@
+{
+  "appId": "com.example.bio_rhythms",
+  "appName": "biorhythms",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1000
+    }
+  },
+  "cordova": {},
+  "server": {
+    "url":"http://192.168.0.110:3000"
+  }
+}
+
+
