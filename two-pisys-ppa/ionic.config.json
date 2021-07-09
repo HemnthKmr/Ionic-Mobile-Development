@@ -1,0 +1,7 @@
+{
+  "name": "two-pisys-ppa",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
