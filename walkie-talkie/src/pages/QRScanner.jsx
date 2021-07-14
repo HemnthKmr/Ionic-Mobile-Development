@@ -62,9 +62,9 @@ const QR_Scanner = () => {
               <img alt="avatar" src={logo} />
             </IonAvatar>
             <IonLabel>
-              <IonText color="danger">2</IonText>
-              <IonText color="primary">PISYS</IonText>
-              <IonText color="medium">PPA</IonText>
+              <IonText color="danger">Walkie</IonText>
+              <IonText color="primary">-</IonText>
+              <IonText color="medium">Talkie</IonText>
             </IonLabel>
           </IonItem>
         </IonToolbar>

@@ -10,7 +10,7 @@ import { Redirect, Route } from "react-router-dom";
 import {qrCodeOutline, peopleOutline, micOutline } from "ionicons/icons";
 import QRScanner from './pages/QRScanner.jsx';
 import ContactsList from './pages/ContactsList.jsx';
-
+import Audio from './pages/Audio.jsx';
 
 const AppTabs = () => {
   return (
@@ -22,6 +22,10 @@ const AppTabs = () => {
 
         <Route exact path="/app/contact">
           <ContactsList />
+        </Route>
+
+        <Route exact path="/app/audio">
+          <Audio />
         </Route>
 
         <Redirect exact path="/" to="/app/QR_scan" />

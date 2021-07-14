@@ -46,9 +46,9 @@ const ContactsList = () => {
               <img alt="avatar" src={logo} />
             </IonAvatar>
             <IonLabel>
-              <IonText color="danger">2</IonText>
-              <IonText color="primary">PISYS</IonText>
-              <IonText color="medium">PPA</IonText>
+              <IonText color="danger">Walkie</IonText>
+              <IonText color="primary"> - </IonText>
+              <IonText color="medium">Talkie</IonText>
             </IonLabel>
           </IonItem>
         </IonToolbar>
@@ -56,7 +56,8 @@ const ContactsList = () => {
       <IonContent className="ion-padding">
         {
           (contacts && contacts.length > 0) ?
-            contacts.map((contact) => {
+            contacts.map((contact,index) => {
+              console.log(index);
               return (contact.phoneNumbers.length > 0) ?
                 (
                   <IonItemSliding key={contact.contactId}>
