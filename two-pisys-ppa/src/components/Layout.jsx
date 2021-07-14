@@ -7,11 +7,11 @@ const Layout = () => {
     const [url, setUrl] = useLocalStorage('url','');
 
     const handleKeyPress = (e) => {
-        if (e.keyCode == 13) {
+        if (e.keyCode === 13) {
             if (url.length <= 0) {
                 return
             }
-            else if(url.substring(0, 8) == "https://" || url.substring(0,7) == "http://" )
+            else if(url.substring(0, 8) === "https://" || url.substring(0,7) === "http://" )
                 {
                     window.open(url, '_blank');
                     setUrl(url);
@@ -26,7 +26,7 @@ const Layout = () => {
         }
         else {
                 let updatedUrl = `${url}/${endPoint}`;
-                if(updatedUrl.substring(0, 8) == "https://" || updatedUrl.substring(0, 7) == "http://" )
+                if(updatedUrl.substring(0, 8) === "https://" || updatedUrl.substring(0, 7) === "http://" )
                 {
                 localStorage.setItem('url', updatedUrl);
                 window.open(updatedUrl, '_blank');
